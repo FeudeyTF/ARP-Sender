@@ -39,10 +39,9 @@ namespace ARPSender
 
         public static long IPAdressToNumber(string ip)
         {
-            var l1 = ip.Split('.');
-            var l2 = l1.Select(b => NormalizeTo8Chars(Convert.ToString(int.Parse(b), 2)));
-            var l3 = l2.Reverse();
-            var binaryIPAdress = string.Join("", l3);
+            var splittedAdress = ip.Split('.');
+            var binaryAdress = splittedAdress.Select(b => NormalizeTo8Chars(Convert.ToString(int.Parse(b), 2)));
+            var binaryIPAdress = string.Join("", binaryAdress.Reverse());
             return Convert.ToInt64(binaryIPAdress, 2);
         }
 
