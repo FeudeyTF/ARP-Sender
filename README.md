@@ -1,2 +1,2 @@
-# ARP-Sender
-This program allow you to send ARP request. This wil help you obtain MAC-Adress of devices in your network
+# .NET ARP-Sender
+This program allows you to send ARP request. This will help you to obtain MAC-Adress of devices in your network
